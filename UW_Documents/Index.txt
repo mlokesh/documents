@@ -1,0 +1,31 @@
+Java
+    Collections, Generics, Multithreading
+Design Patterns
+    Creational, Structural & Behavioral
+Hibernate
+Springs 3.1
+Wicket
+
+Testing Tools:
+- JUnit
+- HttpUnit
+- WebDriver (HtmlUnit, FirefoxDriver, IEDriver)
+
+Frameworks:
+MVC
+- Spring MVC
+
+JavaScript
+JQuery
+JSON
+Ajax
+Backbone.js
+Marionette
+RESTful API
+
+Third party libraries:
+- CodeMirror
+- Elastic Search (Solar)
+
+Other:
+Kanban Model
