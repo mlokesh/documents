@@ -46,6 +46,7 @@ Algorithm:
 An algorithm is a procedure for carrying out a particular task.
 
 Big O notation - Measure of algorithm efficiency.
+Elements/Operations
 
 
 
