@@ -1,0 +1,51 @@
+HTML - Hypertext Markup Language
+XHTML - eXtensible Hypertext Markup Language
+CSS - Cascading Style Sheets for HTML4.0 and higher
+
+DTD - Document Type Definition, defines the legal building blocks of an XML document. 
+
+XML - eXtensible Markup Language. XML was designed to transport and store data.
+XSLT - eXtensible Stylesheet Language Transformations (Style sheet language for XML)
+
+XSD - XML schema definition
+
+JavaScript
+
+AJAX - Asynchronous JavaScript and XML
+AJAX is the art of exchanging data with a server, and updating parts of a web page - without reloading the whole page.
+
+JSON - JavaScript Object Notation.
+JSON is syntax for storing and exchanging text information. Much like XML.
+JSON is smaller than XML, and faster and easier to parse.
+
+XML Parsers:
+- DOM Parser
+- SAX Parser
+
+TCP/IP:
+
+REST API:
+Representational State Transfer
+
+
+Primitive data types:
+
+Type        -   Size in Bits        -       Range of values
+boolean     -       1               -       true or false
+byte        -       8               -       -128 to 127
+char        -       16              -       ‘\u0000’ to ‘\uFFFF’
+short       -       16              -       32,768 to +32,767
+int         -       32              -       2,147,483,648 to +2,147,483,647
+long        -       64              -
+float       -       32
+double      -       64
+
+
+MVN:
+
+Life cycles:
+default, clean and site
+
+default life cycle has following phases:
+validate/compile/test/package/verify/install/deploy
+

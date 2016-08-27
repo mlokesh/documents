@@ -1,0 +1,40 @@
+No cast needed for upward casting.
+Must cast explicitly when going downward.
+
+Cast string to int/double:
+------------------
+String temp = "65000";
+int penn  = Integer.parseInt(temp);
+double db = Double.parseDouble(temp);
+
+Cast int/double to string:
+------------------
+int i = 10;
+double d = 10.0;
+String str1 = Integer.toString(i);
+String str2 = Double.toString(d);
+
+int i = 5;
+short s = (short) i -- Casting i to short and this may result in some data loss
+byte b = (byte) i
+
+Object Casting:
+======================
+Employee emp = new Employee();              -- Parent Class Instance
+StoreEmployee staff = new StoreEmployee();  -- Child Class Instance
+
+emp = staff -- No cast needed for upward casting.
+staff = (StoreEmployee) emp -- Must cast explicitly
+
+-----
+Animal - Parent class
+Cat - Child class
+
+Cat c1 = new Cat();
+Animal a = c1;       //automatic upcasting to Animal
+Cat c2 = (Cat) a;    //manual downcasting back to a Cat
+
+if (a instanceof Cat) {
+    Cat c2 = (Cat) a;
+    }
+-----------

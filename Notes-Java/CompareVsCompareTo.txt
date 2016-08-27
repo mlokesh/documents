@@ -1,0 +1,30 @@
+Comparator Vs Comparable:
+
+1. Comparator in java is defined in java.util package while Comparable interface is defined in java.lang package,
+   which very much says that Comparator should be used as an utility to sort objects which Comparable should be
+   provided by default.
+
+2. Comparator interface in java has method
+    public int compare (Object o1, Object o2) which returns a
+        Negative Integer :   First argument is less than the second
+        0                :   First argument is equal to second
+        Positive Integer :   First argument is greater than the second
+
+3. Comparable interface in java has a method
+    public int compareTo (Object o)
+        Negative Integer    :   Object is less than the specified object
+        0                   :   Object is equal to the specified object
+        Positive Integer    :   Object is greater than the specified object
+
+4. So in Summary if you want to sort objects based on natural order then use Comparable in Java and if you want to sort
+   on some other attribute of object then use Comparator in Java.
+
+
+Comparable - compareTo(Object o) - Use for natural sorting and implemented in the main class.
+Comparator - compare(Object o1, Object o2) - Use for custom sorting and create separate comparator for each sort fields.
+
+
+
+
+
+

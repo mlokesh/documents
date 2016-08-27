@@ -1,0 +1,94 @@
+Collections: (Container)
+------------
+Pre Java1.2 Collection implementation included Vector, Hashtable and array, however these didn't contain collection framework.
+A Collection represents a group of objects knows as its elements.
+Collections framework contain the following:
+-- Interfaces
+-- Implementations
+-- Algorithms: Algorithms are said to be polymorphic.
+
+Benefits of Collections framework:
+-- Reduces programming effort
+-- Increases program speed and quality
+-- Allows interoperability among unrelated API's
+-- Reduces effort to learn and use new API's
+-- Reduces effort to design new API's
+-- Fosters software reuse.
+
+The core collection interfaces encapsulate different types of collections.
+
+Core collection interfaces hierarchy:
+
+Collection:
+    Set -- SortedSet
+    List
+    Queue
+Map:
+    SortedMap
+
+A map is not a true collection.
+All core collection interfaces are generic. The declaration of collection interface is:
+    public interface Collection<E>...
+The <E> syntax tells you that the interface is generic.
+
+The following list describes the core collection interfaces:
+-- Collection - The root of the collection hierarchy. Can contain duplicates or not, ordered and some are not ordered.
+-- Set - A collection that can not contain duplicates.
+-- List - An ordered collection. List can contain duplicate elements.
+-- Queue - A collection used to hold multiple elements prior to processing. Besides basic collection Collection operations, q Queue provides additional insertion,
+    extraction and inspection operations.
+
+Map - An object that maps keys to values. A map can not contain duplicate keys. Similar to Hashtable.
+
+Collection<String> c
+List<String> list = new ArrayList<String>(c);
+
+Traversing Collections:
+----------------------
+1. for-each construct:
+    for(Object o : Collection) {
+    ...
+    }
+
+2. Iterators:
+An iterator is an object that allows you to traverse a collection and remove elements from the collection selectively.
+
+public interface Iterator<E> {
+    boolean hasNext();
+    E next();
+    void remove(); -- optional
+    }
+
+Use iterator instead of for-each construct when you need:
+    1. Remove the current element
+    2. Iterate over multiple collections in parallel.
+
+Ex of using iterator:
+static void filter(Collection<?> c) {
+    for (Iterator<?> it = c.iterator(); it.hasNext(); )
+        if (!cond(it.next()))
+            it.remove();
+    }
+
+Collection Interface Bulk Operations:
+    containsAll
+    addAll
+    removeAll
+    retainAll
+    clear
+
+Collection Interface Array Operations:
+The toArray methods are provided as a bridge between collections and older API's that expects arrays to input.
+
+Object[] a = c.toArray();
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Set Interface:
+=============
+A Set is a collection that can not contain duplicate elements.
+The Set interface contains only methods inherited from Collection and adds the restriction that duplicate elements are prohibited.
+Set also adds a stronger contract on the behavior of the equals and hashCode operations, allowing Set instances to be compared meaningfully even if their implementation
+types differ.
+
+
+
+

@@ -1,0 +1,27 @@
+Autoboxing and Unboxing:
+=======================
+
+As any Java programmer knows, you can’t put an int (or other primitive value) into a collection.
+Collections can only hold object references, so you have to box primitive values into the appropriate wrapper class (which is Integer in the case of int).
+When you take the object out of the collection, you get the Integer that you put in; if you need an int, you must unbox the Integer using the intValue method.
+All of this boxing and unboxing is a pain, and clutters up your code.
+The autoboxing and unboxing feature automates the process, eliminating the pain and the clutter.
+
+The automatic transformation of primitive  type(int, float, double etc.) into their object equivalents or wrapper type(Integer, Float, Double,etc) is known as Autoboxing.
+The automatic transformation of wrapper types into their primitive equivalent  is known as Unboxing.
+
+int i = 0;
+
+i = new Integer(5); // Unboxing
+
+/*  Autoboxing */
+Integer intObject = 5;
+Integer intObject = new Integer(10);
+
+
+
+
+
+
+
+

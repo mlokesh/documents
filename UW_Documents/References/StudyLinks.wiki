@@ -1,0 +1,99 @@
+* http://www.oracle.com/technetwork/articles/javase/horstmann-qa-140483.html
+
+- Inheritance and Interface Links
+* http://home.cogeco.ca/~ve3ll/jatutor5.htm  - Inheritance & Polymorphism
+* http://www.developer.com/java/article.php/948121 - The Essence of OOP Using Java, Inheritance, Part 1
+
+
+- General links
+* http://mindprod.com/jgloss/classpath.html - Class Path
+* http://www.cas.mcmaster.ca/~lis3/javatutorial/Classpath.htm - Class Path
+* http://en.wikipedia.org/wiki/Classpath_(Java) - Class Path
+* http://www.vipan.com/htdocs/javahelp.html - Typical Java Commands
+* http://www.javaworld.com/javaworld/javatips/jw-javatip105.html - Mastering the Clas Path with JWhich
+* http://scharf.gr/eclipse/fullscreen/update/ - Eclipse Full Screen Plugin
+* http://docs.oracle.com/javase/6/docs/technotes/tools/windows/javac.html - Javac
+* http://www.nofluffjuststuff.com/home/magazine_subscribe?id=3 - NFJH Magazine
+* http://pragprog.com/magazines - Pragmatic Bookshelf Magazine
+* http://javaposse.com/ - Java Posse Podcast
+* http://twit.tv/floss87 - Extreme Programming with Kent Beck
+* http://martinfowler.com/books.html#refactoring - Refactoring & Improving the Design Of Existing Code
+
+- More links
+* http://www.ibm.com/developerworks/opensource/library/os-eclipse-master1/index.html?ca=drs-tp4408 - Mastering Eclipse V3.4
+* http://www.particle.kth.se/~lindsey/JavaCourse/Book/Part1/Java/Chapter10/stringBufferToken.html - String Tools
+* http://www.devx.com/tips/Tip/24565 - String Tokenizer: Multiple Delimiter Characters
+* http://answers.yahoo.com/question/index?qid=20071012051323AAU54sl - How to use String Tokenizer in Java
+* http://www.java-samples.com/showtutorial.php?tutorialid=236 - Using String Tokenizer in Java
+* http://www.devdaily.com/java/edu/pj/pj010006/pj010006.shtml - How to break a String into tokens with the String Tokenizer class
+* http://pages.cs.wisc.edu/~hasti/cs302/examples/stringTokenizerExample.html - String Tokenizer Examples
+* http://java.sun.com/docs/books/tutorial/extra/generics/index.html - Java Generics Tutorial
+* http://java.sun.com/docs/codeconv/ - Java coding standards
+* http://junit.sourceforge.net/ - Get started with unit testing and JUnit
+* http://www.javaworld.com/javaworld/jw-12-2000/jw-1221-junit.html - JUnit best practices - Techniques for building resilient, relocatable, multithreaded JUnit tests Junit v3
+* http://www.javaworld.com/javaworld/jw-03-2001/jw-0323-badcode.html - Make bad code good - Refactor broken Java code for fun and profit
+* http://www.clarkware.com/articles/JUnitPrimer.html - JUnit Primer Junit v3
+* http://www.testdriven.com/modules/mylinks/singlelink.php?lid=1032 - JUnit 4.0 in 10 minutes
+* http://www.devx.com/Java/Article/31983 - Get Acquainted with the New Advanced Features of JUnit 4
+* http://today.java.net/pub/a/today/2006/12/07/junit-reloaded.html - JUnit Reloaded
+* http://www.jbrains.ca/permalink/208 - JUnit: A Starter Guide
+* http://open.ncsu.edu/se/tutorials/junit/ - Unit Testing in Eclipse Using JUnit v3
+* http://www.codeguru.com/forum/showthread.php?s=&threadid=292394 - TIP: A little tutorial about String.split();
+* http://www.jibble.org/settingupjava.php - How to install Java and setup commandline dos to execute javac and javadoc
+
+
+* http://www.robert-tolksdorf.de/vmlanguages.html - Languages on the JVM
+* http://www.javadb.com/ - Java Samples
+* http://en.wikipedia.org/wiki/Aspect-oriented_programming - AOP - Aspect Oriented Programming
+* http://www.eclipse.org/aspectj/ - AspectJ Eclipse Project
+* http://en.wikipedia.org/wiki/AspectJ - Wikipedia info on AspectJ
+* http://en.wikipedia.org/wiki/Homogeneous - Homogeneous Wikipedia
+* http://en.wikipedia.org/wiki/Heterogeneous - Heterogeneous Wikipedia
+* http://www.netbeans.org/kb/articles/matisse.html - Articles on  Java GUI Builder
+* http://www.myeclipseide.com/ - MyEclipse UML feature - Netbeans and JDeveloper have it for free.
+* http://www.javapassion.com/netbeans/masterindex.html#Mobility - JavaME articles
+* http://www.developer.com/tech/article.php/3304881 - The Object-Oriented Thought Process Series of Articles
+- Enum links
+* http://download.oracle.com/javase/1,5.0/docs/guide/language/enums.html  - Oracle link
+* http://www.devdaily.com/java/using-java-enum-examples-tutorial - Java enum examples tutorial
+* http://www.java2s.com/Code/Java/Language-Basics/Useanenumconstructorinstancevariableandmethod.htm - Use an enum constructor, instance variable, and method
+* http://plugins.netbeans.org/PluginPortal/faces/PluginDetailPage.jsp?pluginid=10235 - Netbeans Exporter Plugin - Go to File view, select project, right-click->export
+
+* http://drdobbs.com/ - Dr. Dobbs Magazine
+* http://www.umlet.com/ - UML Tools
+* http://argoeclipse.tigris.org/ - UML Eclipse Plugin - Open Source Tools
+
+* http://www.eclipse.org/aspectj/ - aspectj Project
+
+Wikipedia sites
+* http://en.wikipedia.org/wiki/Aspect-oriented_programming
+* http://en.wikipedia.org/wiki/AspectJ
+* http://en.wikipedia.org/wiki/Aspect-Oriented_Software_Development
+* http://en.wikipedia.org/wiki/Spring_framework
+
+Note: see links at bottom of each wiki for additional information
+
+* http://www.parc.com/research/projects/aspectj/downloads/ECOOP2001-Overview.pdf - AspectJ Overview
+* http://www.javaworld.com/javaworld/jw-01-2002/jw-0118-aspect.html - I want my AOP!, Part 1, 2, and 3
+* http://aosd.net/2009/ - International Conference on Aspect-Oriented Software Development (AOSD)
+
+Manning: AspectJ in Actionplus 2nd Ed is in Beta
+
+Examples on Annotations
+* http://www.vogella.de/articles/JUnit/article.html#usingjunit_annotations]
+
+
+* http://www.mkyong.com/unittest/junit-4-tutorial-6-parameterized-test/ -
+Parameterized Test - vary parameter value for unit test. both @RunWith and @Parameter annotations - provide parameter value for test, @Parameters have to return List[], and the parameter will pass into class constructor as argument.
+
+* http://www.mkyong.com/unittest/junit-4-vs-testng-comparison/ - Comparison of junit4 vs testing
+
+AspectJ
+* Eclipse project [http://www.eclipse.org/aspectj/]
+* Wikipedia Info [http://en.wikipedia.org/wiki/AspectJ]
+
+* http://www.javastuff.in/2012/01/java-string-tutorial-with-example.html - Java String Tutorial with Example ~ Java Stuff
+* http://www.odi.ch/prog/design/newbies.php - Java Anti-Patterns
+* http://blogs.oracle.com/java/entry/java_virtual_developer_day - Java Virtual Developer Days in February (The Java Source)
+* http://java.dzone.com/articles/programmers-are-born-not-made - Programmers are born not made | Javalobby
+* http://developer4life.blogspot.com/2012/01/intellij-vs-eclipse.html - Intellij vs. Eclipse

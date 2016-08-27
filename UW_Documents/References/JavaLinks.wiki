@@ -1,0 +1,38 @@
+The following is a list of Software:
+* http://www.cooljavaman.org/wiki/
+* http://java.sun.com/javase/downloads/index.jsp Sun Java Site - Sun Java JDK/SDK
+
+General Informational links:
+* http://javaposse.com/ - Java Posse Podcast
+* http://www.javaranch.com/ - Java Ranch Java for New People
+* http://www.itu.dk/people/sestoft/javaprecisely/ - Java Precisely pdf - scroll to bottom and pdf is free file
+* http://refcardz.dzone.com/ - Java Core RefCardZ
+* http://www.se-radio.net/ - Software Engineering Radio Podcast
+* http://wikis.sun.com/display/code/Home - Sun's Java Samples Page
+* http://jtf.acm.org/?searchterm=Java+Task+Force - Java Task Force
+* http://stackoverflow.com/ - Programming Questions
+
+Patterns+ Books
+* http://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional/dp/0201633612/ref=sr_1_2/104-8051512-4067953?ie=UTF8&s=books&qid=1193635243&sr=1-2 - Design Patterns: Elements of Reusable Object-Oriented Software (Addison-Wesley Professional Computing Series)
+* http://tinyurl.com/2k2sxl - Head  First Design Patterns (Head First)(Paperback)
+* http://tinyurl.com/3bo69k - Fearless Change: Patterns for Introducing New Ideas (Hardcover)
+* http://tinyurl.com/2wq9dn - Patterns of Enterprise Application Architecture (Hardcover)
+* http://tinyurl.com/2wzwmv - Refactoring: Improving the Design of Existing Code (Hardcover)
+
+Free classes
+* http://see.stanford.edu/see/courses.aspx - Stanford engineering Everywhere
+** click on course and click on View Lectures and Materials
+* http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/index.htm - MIT Free Online course materials
+* http://rubylearning.org/class/ - Ruby and JRuby classes
+* http://javapassion.com/ - Java Passion
+** Java, Ajax, JavaFX, Ruby/JRuby, coming Groovy/Grails
+* http://www.buildingwebapps.com/course - Learning Rails 8 audio podcasts
+
+Interesting Articles and Links
+* http://www.infoq.com/articles/paradigm-based-polyglot-prog - Paradigm based Polyglot Programming
+* http://en.wikipedia.org/wiki/Polyglot_(computing) - Polyglot (computing)
+* http://www.theserverside.com/news/thread.tss?thread_id=47184 - Polyglot programming on the Java Platform
+* http://www.stsc.hill.af.mil/CrossTalk/2008/01/0801DewarSchonberg.html  - Computer Science Education: Where Are the Software Engineers of Tomorrow?
+* http://www.wikihow.com/Become-a-Programmer - How to Become a Programmer
+
+

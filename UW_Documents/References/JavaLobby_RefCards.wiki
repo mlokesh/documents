@@ -1,0 +1,10 @@
+* Core Java - http://refcardz.dzone.com/refcardz/core-java?oid=ban00019-0
+* Groovy - http://refcardz.dzone.com/refcardz/groovy?oid=ban00019-0
+* Getting Started with Eclipse - http://refcardz.dzone.com/refcardz/getting-started-eclipse?oid=ban00019-0 -
+* Netbeans - http://refcardz.dzone.com/refcardz/netbeans?oid=ban00019-0
+* Net Beans IDE 6.7 Update - http://refcardz.dzone.com/refcardz/netbeans-ide-67-update
+* IntelliJ Idea - http://refcardz.dzone.com/refcardz/intellij-idea?oid=ban00019-0
+* IntelliJ IDEA: Updated for 8.1 - http://refcardz.dzone.com/refcardz/intellij-idea-update
+* Design Patterns - http://refcardz.dzone.com/refcardz/design-patterns?oid=ban00019-0
+* JUnit and Easy Mock - http://refcardz.dzone.com/refcardz/junit-and-easymock
+* Essential MySQL - http://refcardz.dzone.com/refcardz/essential-mysql

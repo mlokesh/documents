@@ -1,0 +1,22 @@
+
+* Java Puzzlers
+* Object Oriented Design in Java
+
+* Sync - Published in 2003 based on fire flies research
+* Fit for Development
+* Effective Java Programming - Composition and Inheritance
+
+* TDD By Kent Beck
+* Bitter Java By Bruce Tyle
+* Eclipse for Dummies
+* The Inmates are running the Asylum
+
+* A Pattern Language - 1976 (Christopher Alexander)
+* The Timeless Way of Building By Christopher Alexander
+
+* Design Patterns (Gang Of Four)
+* Head First Design Patterns
+
+* Fearless Change - 2005
+
+* Software Engineering With JAVA

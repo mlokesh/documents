@@ -1,0 +1,82 @@
+Spring is a container based framework.
+Springs comes with several container implementations that can be categoriezed into two distinct types. 
+- Bean factories: defined by the org.springframework.beans.factory.BeanFactory interface
+- Application contexts: defined by the org.springframework.context.ApplicationContext interface
+
+Springs comes with several flavors of application context.
+- ClassPathXmlApplicationContext
+- FileSystemXmlApplicationContext
+- XmlWebApplicationContext
+
+Bean life cycle:
+- Instantiate, Populate properties, Bean name aware, Bean factory aware, Application context aware, Pre-initialization, Intializing beans, Call custom init method,
+  Post initialization
+  Bean is ready to use
+  Container is shutdown
+  Destry bean
+
+The center piece of the spring framework is a container that manages how the beans in a spring enabled application are created, configured and managed.
+
+Two ways to configure beans in the spring container. XML and java based configuration option.
+
+Name spaces:
+beans
+context: Comes with elements of configuring the spring application context, including the ablility to autodetect and autowire beans and injection of objects
+not directly managed by spring. 
+
+Bean scoping:
+By default all spring beans are singletons.
+- singleton: default behavior
+- prototype: allows a bean to be instantiated any number of times (once per use)
+- request: 
+- session:
+- global-session: 
+
+SpringExpression Language (SpEL):
+#{}
+bean.properttyname
+bean.method
+...
+
+Minimizing XML configuration in Spring:
+Autowiring helps reduce/even eliminate the need for <property> and <constructor-arg> elements by letting spring automatically figure out how to wire bean dependencies.
+Autodiscovery takes autowiring a step further by letting spring figure out which classes should be configured as spring beans, reducing the need for the 
+    <bean> element.
+
+Four kinds of auto wiring:
+- byName: Attempts to match all properties of the autowired bean with beans that have the same name (or Id) as the properties.
+          Properties for which there is no matching bean will remain unwired. 
+- byType: Attempts to match all properties of the autowired bean with beans whose types are assignable to the properties. 
+          Properties for which there’s no matching bean will remain unwired.
+- constructor: Tries to match up a constructor of the autowired bean with beans whose types are assignable to the constructor arguments.
+- autodetect: Attempts to apply constructor autowiring first. If that fails, byType will be tried.
+
+
+Wiring with Annotations:
+Annotation wiring isn’t turned on in the Spring container by default. 
+So, before we can use annotation-based autowiring, we’ll need to enable it in our Spring configuration. 
+The simplest way to do that is with the <context:annotation-config> element from Spring’s context configuration namespace.
+
+- @Autowired(required=true)
+- @Qualifier("saxophone")
+
+Annotating beans for autodiscovery:
+By default, <context:component-scan> looks for classes that are annotated with one of a handful of special stereotype annotations:
+- @Component—A general-purpose stereotype annotation indicating that the class is a Spring component
+- @Controller—Indicates that the class defines a Spring MVC controller
+- @Repository—Indicates that the class defines a data repository
+- @Service—Indicates that the class defines a service
+
+
+
+Inversion Of Control (IoC): Passing the control from client side to framework to esatblish relationship between components.
+Dependency Injection...
+
+Inject Types:
+1. Constructor injection
+2. Setter injection
+3. Interface injection
+
+Spring uses a concept of a BeanFactory as its assembler.
+
+

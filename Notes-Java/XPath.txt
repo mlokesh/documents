@@ -1,0 +1,26 @@
+XPath is used to navigate through elements and attributes in an XML document.
+
+In XPath, there are seven kinds of nodes:
+    element, attribute, text, namespace, process-instruction, comment and document nodes.
+    
+ Example:
+ <?xml version="1.0" encoding="ISO-8859-1"?>
+    <bookstore> -- Root node
+        <book>
+            <title lang="en">Harry Potter</title> -- lang=en is attribute node
+            <author>J K. Rowling</author> -- element node
+            <year>2005</year>
+            <price>29.99</price>
+        </book>
+    </bookstore>
+ 
+ Atomic values are nodes with no children or parent.
+
+ XPath Syntax:
+Selecting nodes:
+nodename -> Selects all nodes with the name "nodename"
+/ -> 
+// -> 
+. -> 
+.. -> 
+@ -> 

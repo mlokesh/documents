@@ -1,0 +1,300 @@
+08/22/12:
+========
+jnlp
+key store
+
+---
+jConsole
+jVisualVM
+
+======================================================================================================================================================================
+08/15/12:
+========
+
+RemoteBrokerSession extends Remote
+RemoteBrokerGateway extends Remote
+    RemoteBrokerSession createAccount/login
+
+RemoteBrokerSessionImpl extends UnicastRemoteObject implements RemoteBrokerSession
+    close()
+    UnicastRemoteObject.unexportObject(this, true);
+
+RemoteBrokerGatewayImpl extends UnicastRemoteObject implements RemoteBrokerGateway
+  
+RmiBrokerServer
+-- From Broker Test
+
+======================================================================================================================================================================
+08/08/12:
+========
+DatagramSocket eventSocket;
+DatagramPocket datagramPocket;
+int multicastPort;
+
+CommandListener listenThread = new CommandListener(commandPort, exchng);
+listenThread.start();
+
+priceChanged - Formatter
+
+byte[] buf = msg.getBytes(ProtocolConstants.ENCODING);
+datagramPacket.setData(buf);
+datagramPacket.setLength(buf.length);
+eventSocket.send(datagramPacket);
+--
+Class Name: NetEventProcessor
+MulticastSocket
+EventListenerList listenerList = new EventListenerList();
+
+======================================================================================================================================================================
+07/25/12:
+========
+
+while (true) {
+    while ((x = queue.dequeue()) == null) {
+        condition.await();
+        }
+    processor.processOrder(x);
+}
+
+DispatchOrderFilter is the place to have condition.signal.
+Thread - A worker thread in Queue class.
+
+
+
+OrderQueue - Re-Implement dispatch orders
+some executor before and not do the work on the invoking thread.
+
+worry about treeset, make sure not to corrput treeset...
+OrderProcessor - something to protect.
+
+wait/notify/synchronized
+
+======================================================================================================================================================================
+07/11/12:
+========
+E - Elements of a collection
+K and V - Map
+T, U and V - General types
+
+--- 
+Look at the java docs...
+SimpleOrderQueue<E extends Order>
+
+Constructor - Uses the generics...
+
+DispatchFilter
+(threshhold (integer), )
+
+MarketDispatchFolter (boolean, )
+
+Check - Open or closed (returns only this)
+
+Broker implements ExchangeListener:
+When you create - Add exchange listener.
+
+Assignment 04: Inputs:
+=====================
+Order Queue.
+-- Only for orders
+Priority - Price or Quantity
+Comparator - Price / Qualntity of stocks
+
+To execute: Dispatchable (Dispatch criteria)
+Top of the queue
+Targeting price - current price
+
+Only one method to implement (Override: check method) -- Don't override any other methods.
+Check: Receives an order, looks at everything and returns true/false
+
+Multiple queue
+Every stock has stock manager
+
+Queue-1         Queue-2
+10              27
+15              25
+16              22
+17(No)          19
+18(No)          16
+19(No           15 (No)
+
+<=        16    <=
+
+Buy stop order    Sell stop order
+Asc order         Desc order
+
+pull from above queues and move to market queue and this deals with exchange.
+StockTracker Order processor and this will have reference to exchange and account manager
+Executes the order and updates that info with account manager.
+
+Every stock will have two queues (buy & sell)
+
+Every queue has an order processor / dispatch filter.
+
+Market queues.
+
+Moves one to another queue.
+
+Dispatcher should hand it over 
+
+OrderManager: order symbol and queues (For each there is an OrderManger)
+
+Listener (We have to use to know when the stock price changes)
+
+Class diagram (Comparator is missing)
+
+Broker (Use HaspMap)
+Key - Stock Symbol 
+Value- OrderManager
+
+Broker will be a listener for stock exchange. 
+
+Market Order resides in the broker. - One queue.
+
+In this case, we have only one broker.
+
+Broker will create the market queue and creates order managers to everybody.
+---
+
+Every queue will have Comparator and gives an order
+Dispatch filter will check
+It will use order processor.
+
+Read Tip:
+Class: SimpleOrderQueue
+
+private TreeSet<E> queue;
+private OrderDispatchFilter<?, E> filter
+
+SimpleOrderQueue(OrderDispatchFilter<?, E> filter) {
+queue = new TreeSet<E>();
+this.filter = filter
+this.filter.setOrderQueue(this)
+}
+
+Use TreeSet instead of priorityQueue.
+
+OrderQueue and OrderManager - Get it working.
+======================================================================================================================================================================
+06/25/12:
+========
+
+Input Stream - Reading
+Output Stream - Writing
+
+DataInputStream
+Account: Use java.util.Properties to load the data in key value pairs.
+
+Create a properties object.
+Slide #40.
+
+Use methods in slide #42 to write account.
+
+SHORT | ...... array
+readfully
+======================================================================================================================================================================
+06/20/12:
+========
+
+Review comments for assigment 01:
+================================
+Add equals and hashcode - CreditCard
+    
+Types of equals:
+Value based quality/Instance based quality. This is important when using HaspMap.
+
+-- Define static variables at class level if you have to run only one and not run during each instantiation.
+
+static {
+        Preferences prefs = Preferences.userNodeForPackage(Account.class);
+        int minAccountLengthValue = prefs.getInt("minAccountLength", 0);
+        int minAccountBalanceValue = prefs.getInt("minAccountBalance", 0);
+       }
+
+Copy the array passed into your method or constructor so that any edits made to original array reference does not change the values already read in program.
+    final byte[] copy = new byte[passwordHash.length]
+    System.arraaycopy(passwordHash, 0, copy, 0, passwordHash.length);
+
+Assignment 02 inputs:
+====================
+Implement AccountManager interface
+Implement AccountManager Factory
+Use JNDI to connect database
+
+Database access through database.
+    Using JNDI and data source.
+    In XML you can change but no need. Just copy it and use it.
+
+JNDI properties file name: jndi.properties -- It should be in your class path
+
+Code snippet:
+Class: SimpleAccountManager
+    private String ENCODING = "UTF-8";
+    private String ALGORITH = "SHA1";
+    private AccountDao dao;
+    private AccountFactory accountFactory;
+
+    MessageDigest md  = MessageDigest.getInstance(ALGORITH)
+    md.update(password.geBytes(ENCODING);
+
+java.security.MessageDigest
+
+Deal with null in the assignment when inserting to database.
+
+Ex:
+    (streeAddres != null || city != null || state != null || zipCode != null)
+
+    addr = (Address)AbstractTypeFactory.newInstance(Address.class)
+    addr.setStreet("street");
+
+Class Notes:
+===========
+
+DAO:
+    Methods to define are methods required for client to work 
+    
+======================================================================================================================================================================
+06/13/12:
+========
+Instructor: Russ
+Website: http://faculty.washington.edu/rmoul/java/advancedFeatures
+student/jetson
+
+Java Beans: getters and setters - property x.
+Event listeners. Event changes...
+java.util.Concurrent/Multicast
+
+Util.logging - Write our logging appender. Log record to database and in a controlled manner. What classes and what not.
+
+Custom handler:
+Extend the Handler class
+- Close()
+- flush()
+- publish (LogRecord) -- This is where the logic resides...
+
+Use isLoggable(Level)
+
+Filter: An Interface
+-- Goes before publish and checks it is loggable or not.
+
+Formatter:
+- SimpleFormatter
+- XMLFormatter 
+
+Override format method to format. Refer example in slides.
+
+LogManager.getProperty(String propName);
+
+Setting logging at package level: edu.wash.sem01.ass01.Level = INFO
+
+-Djava.util.logging.config.file=logging.properties
+
+Third party logging libraries:
+Apache logging:
+Log4j
+Commons logging
+
+Preferences Framework:
+    Node listeners
+    Preference listeners
+
+======================================================================================================================================================================

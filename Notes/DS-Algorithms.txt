@@ -1,0 +1,58 @@
+Data structures:
+- Simple data structures (Boolean, Character, Floating point, Double, Integer)
+- Compound data structures
+    -   Linear data structures
+    -   Non-linear data structures
+
+Linear data structures:
+(Abstract data structure/Implementations)
+
+- Arrays:
+    Array
+    Dynamic Arrays: (Implementations: Vector/Array Lists)
+
+- Lists:
+    Linked lists:   (Singly Linked List, Doubly Linked List, Circular Linked List)
+    Array lists
+
+- Stack: (LIFO)
+- Queue: (FIFO)
+- Associative array: (Implementations: Hashtable/Map->HashMap)
+
+
+Non-linear data structures
+
+- Tree: Binary tree/B-tree/Red-Black tree/AVL tree/Splay tree/heap
+- Heap:
+- Graph:
+    Vertices
+    Edges
+
+    -   Directed graph or digraph (one directional/unidirectional)
+    -   Undirected graph (facebook)
+
+========================================================================================================================
+Associative array is an abstract data type composed of a collection of pairs(key, value)
+Vector: Increases size to 1 and 1/2 times when it needs to extend
+        Synchronized (slower)
+ArrayList:  Increases size to 2 times when it needs to extend
+            Non synchronized (faster access)
+
+Binary search tree(BST): also called sorted or ordered binary trees.
+
+========================================================================================================================
+
+Algorithm:
+An algorithm is a procedure for carrying out a particular task.
+
+Big O notation - Measure of algorithm efficiency.
+
+
+
+
+========================================================================================================================
+Heap memory:
+Heap is the portion of the memory where dynamically allocated portion resides. (malloc)
+
+Stack memory:
+Where local variables live.

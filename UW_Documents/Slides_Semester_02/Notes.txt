@@ -1,0 +1,258 @@
+======================================================================================================================================================================
+06/06/12:
+========
+======================================================================================================================================================================
+05/23/12:
+========
+Threads:
+
+Class: java.lang.Thread
+Interface: java.lang.Runnable
+
+======================================================================================================================================================================
+05/16/12:
+========
+Hypersonic.
+Simple Network Programming:
+Command Pattern.
+
+Application layer:
+HTTP
+FTP
+
+Transport layer:
+TCP - Reliable/Connection based protocol
+UDP - Unreliable/Connectionless based protocol
+
+Network layer:
+IP
+
+Datalink layer:
+Ethernet
+(Does translation to physical layer)
+
+Basics of TCP/IP:
+IPv4 - 32 bits address
+
+Java packages:
+java.net
+java.socket
+
+======================================================================================================================================================================
+05/09/12:
+========
+JDBC:
+java.sql, javax.sql
+
+Reflection
+Hibernate
+
+jar tvf cp125-05.jar
+======================================================================================================================================================================
+05/02/12:
+========
+
+Serialization:
+Works well for value objects and classes not designed for inheritance.
+
+Class -> Inner Class (static) - Have resolve method there and in main class have two methods, one write calls inner class.
+Proxy.
+
+Pick a parser for JSON, -- GSON is one available one.
+ 
+Proxy Pattern - Stackoverflow site.
+
+======================================================================================================================================================================
+04/26/12:
+========
+Creational patterns
+Collections
+---
+
+Creational patterns:
+-- Abstract factory
+-- Builder
+-- Factory method
+-- Prototype
+-- Singleton
+
+Singleton: Only one instance of class available any time.
+How to make this work: Make constructor private and have a member method create instance of that class.
+
+--
+What to protect from client code:
+
+Static factory: Calendar class
+
+Builder patterns:
+
+Collections:
+-----------
+Java Generics - O'relly.
+
+Check out Collections utility class and Arrays class.....Java Docs
+Study how data is stored in hashtable and hashset collections.
+
+Big 0
+
+                |   Insert  Delete  LoopUp  Sorted  Growth          Access
+============================================================================
+Hash            |   0(1)    1       1       no      chunks          value
+                |
+Tree            |   log n   log n   log n   yes     incremental     value
+                |   
+Linked List     |   n       n       n       no      incremental     value
+                |
+Array           |   n       n       n/1     no      chunks          random
+
+
+Strategy patterns:
+-----------------
+Ex: Gift Card renderer - Sub classes will have diff methods implemented (pdf, html, text etc)
+Client code just calls the renderer without knowing the sub classes.
+
+Comparable interface is strategy pattern.
+
+Assignment 04:
+-------------
+int CompareTo(<T> other)
+Pass the compare to your collection.
+
+int compare(<T> first, <T> second)
+
+Comparator
+public class IntegerComparator implemets Comparator<Integer> {
+
+Implement your own compare method.
+compare(...) {
+}
+
+
+======================================================================================================================================================================
+04/18/12:
+========
+
+File I/O
+Streams.
+
+Types:
+    Binary
+    Text
+    java.nio.*
+
+File/Byte Arrary/Network/etc
+
+Stream- getting data from source to sink
+
+BuffererdInput
+DataInput
+
+java.util.Properties
+System.getProperties
+
+Types of Patterns:
+- Creational patterns
+- Structural patterns
+- Behavioral patterns
+
+Creational pattern types:
+    -   Abstract Factory
+    -   Builder
+    -   Singleton
+    -   Factory Method
+    -   Prototype
+
+Read Effective Java Book:
+
+Assignment 02 Sample Code:
+-------------------------
+StringBuffer sb = new StringBuffer();
+Formatter formatter = new Formatter (sb, Locale_US)
+
+formatter.format(CARD_BORDER)
+         .format(HEADER_FORMAT, consultant.getName(), weekStartingDay)
+         .format("%nBillable Time:%n")
+         .format(LINE_HEADER_FORMT, "Account", "Date", "Hours", "Skill");
+           
+appendTime(formatter, consultingHours, true);
+
+formatter.format("%nNon-Billable Time:%n")
+         .format(LINE_HEADER_FORMT, "Account", "Date", "Hours", "Skill");
+
+appendTime(formatter, consultingHours, false);
+
+formatter.format(%nSummary:%n"))
+         .format(SUMMARY_LINE_FORMAT, TotalBillable, weekStartingDay)
+         .format("%nBillable Time:%n")
+         .format(LINE_HEADER_FORMT, "Account", "Date", "Hours", "Skill")
+
+for(ConsultantTime cut : hours)
+{
+    if cut.isbillable() == billanle) {
+    ( formatter.format(LINE_FORMAT, cut.getaccount.getname,
+                                    cut.getdate,
+                                    cut.gethurs,
+                                    cut.getskill.getname)
+                    }
+}
+
+=====================================================================================================================================================
+04/11/12:
+========
+jar tvf build\jar\Example.jar
+
+Using mocks:
+-----------
+Depend on class that is not depend on yourself. (Outside code)
+
+Mock frameworks: easyMock, jMock. Mockito
+Mock objects out of interfaces and classes in Mockito and not in easyMock.
+
+Client <-> Server (In order to run without using server use mock objects)
+
+1. Front door - Better control of input
+2. Type safety
+3. Implementation control - Client no need to change only implementation can be changed.
+
+Dates and Formatters:
+--------------------
+How to maniuplate dates and string formatting.
+
+Calendar/Date:
+java.util.Date
+java.util.Calendar (use this)
+
+Formatter:
+java.util.Formatter
+
+java.text
+SimpleDataFormat
+DecimalFormat
+formmat()
+parse()
+
+String.format
+
+=====================================================================================================================================================
+04/04/12:
+========
+Teacher: Ryan Stephens
+eMail: d.ryan.stephens@gmail.com
+
+Ant:
+Clean, Compile
+
+Mockio, JMock
+
+Test Cases
+    Null array - null
+    Empty array. - 0
+    too small array - 1
+    Integer. MAX_INT (Greater than max Int can hold)
+    happy case
+    positive in array
+    negative in array
+    huge array
+    {Integer.MAX_VALUE,Integer.MAX_VALUE-1,Integer.MAX_VALUE-2}, 25
+
+=====================================================================================================================================================

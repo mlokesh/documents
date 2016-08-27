@@ -1,0 +1,87 @@
+directives : how do we bind the behavior: marker to reference the code to run.
+expressions: way to insert dynamic values
+
+
+ng-app - aplication
+ng-model - binds the value of HTML controls (input, select, textarea) to application data
+ng-bind - directive binds application data to the HTML view
+
+
+ng-init - directive initializes application data
+ng-controller - controller
+
+ng-repeat -
+
+====================
+controller example:
+====================
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module("myApp", []);
+
+app.controller("myCtrl", function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+
+
+====================
+directive example:
+====================
+<div ng-app="myApp" w3-test-directive></div>
+
+<script>
+
+var app = angular.module("myApp", []);
+
+app.directive("w3TestDirective", function() {
+    return {
+        template : "I was made in a directive constructor!"
+    };
+});
+</script>
+
+========
+AngularJS lets you extend HTML with new attributes called Directives.
+
+
+The legal restrict values are:
+
+E for Element name
+A for Attribute
+C for Class
+M for Comment
+
+default: EA
+
+restrict : "A"
+
+
+Two-Way Binding
+==============
+The binding goes both ways. If the user changes the value inside the input field, the AngularJS property will also change it's value:
+
+The ng-model directive adds/removes the following classes, according to the status of the form field:
+
+
+
+ng-empty
+ng-not-empty
+ng-touched
+ng-untouched
+ng-valid
+ng-invalid
+ng-dirty
+ng-pending
+ng-pristine
+

@@ -1,0 +1,120 @@
+Was called ECMAScript
+
+js is more of a functional language
+(high level, dynamic, untyped interpreted programming language)
+
+not just programming constructs but they can be treated like data.
+
+Whatever u do with objects can be done with functions
+
+blog: execution in the kingdom of nouns
+http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html
+
+data types: 6 types
+(typeof)
+-- number
+-- string
+-- boolean
+-- object
+-- function
+-- undefined (to denote absence of something)
+
+raw data *number, string, boolean)
+
+mdn Object.create
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+
+
+functional (not just programming constructs but they can be treated like data)
+dynamic
+loosely types
+
+jQuery:
+Lot of DOM manipulation - jQuery
+
+$ - main function
+
+$(document)
+$([dn1, dn2])
+$("#txtName")
+$(function()) => $(document).ready(function(){})
+$($)
+
+
+----
+DOM:
+Document object represents the HTML document that is displayed in the window.
+Legacy, W3C, IE4
+
+instanceof
+
+this/argument
+
+function invocations:
+--  method of an object (this -> object)
+-- as a function (this -> window)
+-- using the call method
+-- using the apply method
+
+default function calls:
+apply
+bind
+call
+
+dynamically set this when calling function using call or apply
+
+fn.call(obj)
+
+console.dir(fn)
+console.dir(obj)
+
+Immediately invoked function expressions - IIFE
+
+
+Closures created in 5 steps:
+
+1. have outer function
+2. variable in the outer function (can be function, obj or anything)
+3. an inner function
+4. Variable in the outer fn is referred and used in the inner fn
+**5. extend the lifetime of inner fn beyond the lifetime of outer function (along with it increases the lifetime of variable)
+
+closure: it is a scope. - outer fn creates and inner fn controls it
+
+-- Any time want to hide something use closures...
+
+closures
+revealing module pattern;
+
+default return of function - >  undefined
+
+functions behave like classes;
+
+constructor functions:
+new Function()
+
+- are invoked using "new"
+- this -> new object
+- default return value is -> this
+
+it has constructor attribute
+
+===
+Inheritance:
+
+prototypal inheritence
+
+
+every function has a prototype
+
+prototype hopping (happens only for reading)
+
+============
+
+
+Functional Programming:
+----------------------
+
+
+

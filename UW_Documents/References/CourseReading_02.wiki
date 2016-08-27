@@ -1,0 +1,11 @@
+
+* 4/4               Ant                                 Ant documentation
+* 4/11              JUnit & Inner Classes               JUnit documentation
+*                                                       Volume I, pg. 258 - 275
+* 4/18              Java I/O                            Volume II, pg. 1 - 23
+* 4/25              Collections                         Volume I, pg. 649 - 707
+* 5/02              Object Serialization                Volume II, pg. 39 - 59
+* 5/09              Java Reflection and JavaBeans       The Java Reflection Tutorial; Volume I, pg 217-238; Volume II, ch. 8
+* 5/16              Java Database Access                Volume II, pg. 217 - 279
+* 5/23              Simple Network Programming          Volume II, pg. 169 - 184, 196 - 216
+* 5/30              Threads                             Volume I, pg. 715 - 764

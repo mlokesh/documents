@@ -1,0 +1,60 @@
+-- Dynamic Content
+-- Scriptlets
+-- Directives
+-- Declarations
+-- Sessions
+-- Beans & Form Processing
+-- Tags
+-- Tag Libraries
+=========================================================
+-- Dynamic Content
+    <%= new java.util.Date() %>
+-- Scriptlets
+    <%
+        java.util.Date date = new java.util.Date();
+    %>
+-- Directives
+    <%@ page import="java.util.*" %>
+    <%@ include file="hello.jsp" %>
+-- Declarations
+     <%!  %>
+-- Tags
+    <jsp:include page="hello.jsp"/>
+-- Sessions
+    <%
+        String name = request.getParameter( "username" );
+        session.setAttribute( "theName", name );
+    %> 
+-- Beans and Form processing
+    <HTML>
+        <BODY>
+            <FORM METHOD=POST ACTION="SaveName.jsp">
+                What's your name? <INPUT TYPE=TEXT NAME=username SIZE=20><BR>
+                What's your e-mail address? <INPUT TYPE=TEXT NAME=email SIZE=20><BR>
+                What's your age? <INPUT TYPE=TEXT NAME=age SIZE=4>
+                <P><INPUT TYPE=SUBMIT>
+            </FORM>
+        </BODY>
+    </HTML>
+    
+    <jsp:useBean id="user" class="user.UserData" scope="session"/>
+    <jsp:setProperty name="user" property="*"/> 
+    <HTML>
+        <BODY>
+            <A HREF="NextPage.jsp">Continue</A>
+        </BODY>
+    </HTML>
+    
+    <jsp:useBean id="user" class="user.UserData" scope="session"/> 
+    <HTML>
+        <BODY>
+            You entered<BR>
+            Name: <%= user.getUsername() %><BR>
+            Email: <%= user.getEmail() %><BR>
+            Age: <%= user.getAge() %><BR>
+        </BODY>
+    </HTML>
+    
+-- Tag libraries
+    <%@ taglib prefix="blx" uri="/blx.tld" %>
+

@@ -1,0 +1,57 @@
+Topics with Readings from a couple of books. Note: '''Required book''' is Core Java. Also, Topics will change due to final/midterm being dropped.
+
+1. Introduction to Javas:
+      An overview of Course. overview of java and starting syntax.
+      Core Java Ch 1 & 2
+      Head First Java 2nd Ed. - ch 1 & 2
+      Thinking in Java 4th ed - introduction,
+      Java Tutorial Online - [http://java.sun.com/docs/books/tutorial/java/TOC.html] - Object-Oriented Programming Concepts and Language Basics
+
+2. Classes and Objects:
+      Broad overview of Java language syntax and constructs.
+      Core Java Ch 3 & 4
+      Head First Java 2nd Ed. - ch 3 4, & 5
+      Thinking in Java  4th ed - intr to objects, everything is an object, operators, controlling execution
+      Java Tutorial Online - [http://java.sun.com/docs/books/tutorial/java/TOC.html] - Classes and Objects
+
+3. Collections of Objects:
+      Introduction to arrays and collections.
+      Core Java Ch  4
+      Head First Java 2nd Ed. - ch 6
+      Thinking in Java 4th ed - arrays, generics, holding your objects
+      Java Tutorial Online -  [http://java.sun.com/docs/books/tutorial/java/package/index.html]
+
+4. Library Classes:
+      Examination of a few of the most widely used classes and the importance of good documentation in enabling re-use.
+      Core Java Ch  4
+      Head First Java 2nd Ed. - ch 6
+      Thinking in Java see week 3
+      Java Tutorial Online  - [http://java.sun.com/docs/books/tutorial/collections/index.html] - Introduction,
+
+5. Class Design:
+      Exploration of important elements of class design. Basic design techniques are introduced.
+
+6. Inheritance:
+      Discussion:
+      Core Java Ch  5
+      Head First Java 2nd Ed. - ch 7, 8, & 9
+      Thinking in Java 4th ed - reusing classes
+      Java Tutorial Online -  [http://java.sun.com/docs/books/tutorial/java/IandI/index.html] - Interfaces and inheritance
+
+7. Abstraction Techniques:
+      The importance of abstract types is explored.
+      Core Java Ch  6
+      Head First Java 2nd Ed. - see week 6
+      Thinking in Java 4th ed - polymorphism, interfaces
+      Java Tutorial Online - [http://java.sun.com/docs/books/tutorial/java/IandI/index.html]
+
+8. Error Handling:
+      The Java exception handling mechanism.
+       Core Java Ch  11
+      Head First Java 2nd Ed. - ch 11
+      Thinking in Java 4th ed error handling with exceptions
+      Java Tutorial Online - [http://java.sun.com/docs/books/tutorial/essential/index.html] - Exceptions
+
+9. Extra material and getting started for next class
+
+10. Review of course
