@@ -1,11 +1,5 @@
 E - Element (used extensively by the Java collections framework)
-
 N - Number
-
 T - Type
-
-K - Key
-V - Value
-
+K - Key & V - Value
 S, U, V etc - 2nd, 3rd, 4th types
-

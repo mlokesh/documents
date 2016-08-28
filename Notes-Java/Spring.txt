@@ -47,25 +47,25 @@ Four kinds of auto wiring:
 - byName: Attempts to match all properties of the autowired bean with beans that have the same name (or Id) as the properties.
           Properties for which there is no matching bean will remain unwired. 
 - byType: Attempts to match all properties of the autowired bean with beans whose types are assignable to the properties. 
-          Properties for which thereÕs no matching bean will remain unwired.
+          Properties for which thereï¿½s no matching bean will remain unwired.
 - constructor: Tries to match up a constructor of the autowired bean with beans whose types are assignable to the constructor arguments.
 - autodetect: Attempts to apply constructor autowiring first. If that fails, byType will be tried.
 
 
 Wiring with Annotations:
-Annotation wiring isnÕt turned on in the Spring container by default. 
-So, before we can use annotation-based autowiring, weÕll need to enable it in our Spring configuration. 
-The simplest way to do that is with the <context:annotation-config> element from SpringÕs context configuration namespace.
+Annotation wiring isnï¿½t turned on in the Spring container by default. 
+So, before we can use annotation-based autowiring, weï¿½ll need to enable it in our Spring configuration. 
+The simplest way to do that is with the <context:annotation-config> element from Springï¿½s context configuration namespace.
 
 - @Autowired(required=true)
 - @Qualifier("saxophone")
 
 Annotating beans for autodiscovery:
 By default, <context:component-scan> looks for classes that are annotated with one of a handful of special stereotype annotations:
-- @ComponentÑA general-purpose stereotype annotation indicating that the class is a Spring component
-- @ControllerÑIndicates that the class defines a Spring MVC controller
-- @RepositoryÑIndicates that the class defines a data repository
-- @ServiceÑIndicates that the class defines a service
+- @Componentï¿½A general-purpose stereotype annotation indicating that the class is a Spring component
+- @Controllerï¿½Indicates that the class defines a Spring MVC controller
+- @Repositoryï¿½Indicates that the class defines a data repository
+- @Serviceï¿½Indicates that the class defines a service
 
 
 
@@ -78,5 +78,3 @@ Inject Types:
 3. Interface injection
 
 Spring uses a concept of a BeanFactory as its assembler.
-
-

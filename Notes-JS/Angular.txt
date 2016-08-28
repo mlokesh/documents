@@ -2,7 +2,7 @@ directives : how do we bind the behavior: marker to reference the code to run.
 expressions: way to insert dynamic values
 
 
-ng-app - aplication
+ng-app - application
 ng-model - binds the value of HTML controls (input, select, textarea) to application data
 ng-bind - directive binds application data to the HTML view
 
@@ -54,7 +54,6 @@ app.directive("w3TestDirective", function() {
 ========
 AngularJS lets you extend HTML with new attributes called Directives.
 
-
 The legal restrict values are:
 
 E for Element name
@@ -66,14 +65,11 @@ default: EA
 
 restrict : "A"
 
-
 Two-Way Binding
 ==============
 The binding goes both ways. If the user changes the value inside the input field, the AngularJS property will also change it's value:
 
 The ng-model directive adds/removes the following classes, according to the status of the form field:
-
-
 
 ng-empty
 ng-not-empty
@@ -84,4 +80,3 @@ ng-invalid
 ng-dirty
 ng-pending
 ng-pristine
-

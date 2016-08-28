@@ -48,12 +48,17 @@ An algorithm is a procedure for carrying out a particular task.
 Big O notation - Measure of algorithm efficiency.
 Elements/Operations
 
-
-
-
 ========================================================================================================================
 Heap memory:
 Heap is the portion of the memory where dynamically allocated portion resides. (malloc)
 
 Stack memory:
 Where local variables live.
+
+Queue:
+Adding: add, offer
+Remove: remove, poll
+peek: element, peek
+
+add(IllegalStateException), remove, element - throws exception
+offer (true/false), poll(null), peek(null) - throws special value

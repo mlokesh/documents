@@ -42,10 +42,8 @@ double      -       64
 
 
 MVN:
-
 Life cycles:
 default, clean and site
 
 default life cycle has following phases:
 validate/compile/test/package/verify/install/deploy
-

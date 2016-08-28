@@ -22,9 +22,3 @@ Comparator Vs Comparable:
 
 Comparable - compareTo(Object o) - Use for natural sorting and implemented in the main class.
 Comparator - compare(Object o1, Object o2) - Use for custom sorting and create separate comparator for each sort fields.
-
-
-
-
-
-

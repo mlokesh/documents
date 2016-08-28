@@ -14,6 +14,3 @@ Session Factory: application obtains sessions from session factory. It is intend
 Configuration Interface: configuration object is used to configure and bootstrap hibernate. The application uses configuration instance to specify the
     location of the mapping documents and hibernate specific proprties and then create a session factory.
 Transaction Interface: JDBC transaction or JTA transaction or CORBA transaction - Common object request broker architecture.
-
-
-

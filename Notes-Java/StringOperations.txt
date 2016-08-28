@@ -1,16 +1,15 @@
 A string buffer implements mutable sequence of characters.
 
- x = "a" + 4 + "c"
- is compiled to the equivalent of:
-     x = new StringBuffer().append("a").append(4).append("c").toString()
+x = "a" + 4 + "c"
+is compiled to the equivalent of:
+x = new StringBuffer().append("a").append(4).append("c").toString()
 
 StringBuilder:
 A mutable sequence of characters. This class provides an API compatible with StringBuffer, but with no guarantee of synchronization.
 
 StringBuffer is synchronized( which means it is thread safe and hence you can use it when you implement threads for your methods)
-whereas StringBuilder is not synchronized( which implies it isnÕt thread safe).
+whereas StringBuilder is not synchronized( which implies it isnï¿½t thread safe).
 
-StringBuilder sb = new StringBuilder(ÒHelloÓ);
-sb.append(Ó WorldÓ);
+StringBuilder sb = new StringBuilder(ï¿½Helloï¿½);
+sb.append(ï¿½ Worldï¿½);
 system.out.println(sb);
-

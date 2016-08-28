@@ -14,13 +14,13 @@ In XPath, there are seven kinds of nodes:
         </book>
     </bookstore>
  
- Atomic values are nodes with no children or parent.
+Atomic values are nodes with no children or parent.
 
- XPath Syntax:
+XPath Syntax:
 Selecting nodes:
 nodename -> Selects all nodes with the name "nodename"
 / -> 
 // -> 
 . -> 
 .. -> 
-@ -> 
+@ ->
