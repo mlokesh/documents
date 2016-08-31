@@ -1,21 +1,3 @@
-======================================================================================================================================================================
-06/06/12:
-========
-======================================================================================================================================================================
-05/23/12:
-========
-Threads:
-
-Class: java.lang.Thread
-Interface: java.lang.Runnable
-
-======================================================================================================================================================================
-05/16/12:
-========
-Hypersonic.
-Simple Network Programming:
-Command Pattern.
-
 Application layer:
 HTTP
 FTP
@@ -39,19 +21,6 @@ java.net
 java.socket
 
 ======================================================================================================================================================================
-05/09/12:
-========
-JDBC:
-java.sql, javax.sql
-
-Reflection
-Hibernate
-
-jar tvf cp125-05.jar
-======================================================================================================================================================================
-05/02/12:
-========
-
 Serialization:
 Works well for value objects and classes not designed for inheritance.
 
@@ -60,14 +29,7 @@ Proxy.
 
 Pick a parser for JSON, -- GSON is one available one.
  
-Proxy Pattern - Stackoverflow site.
-
-======================================================================================================================================================================
-04/26/12:
-========
-Creational patterns
-Collections
----
+Proxy Pattern - Stack overflow site.
 
 Creational patterns:
 -- Abstract factory
@@ -79,12 +41,6 @@ Creational patterns:
 Singleton: Only one instance of class available any time.
 How to make this work: Make constructor private and have a member method create instance of that class.
 
---
-What to protect from client code:
-
-Static factory: Calendar class
-
-Builder patterns:
 
 Collections:
 -----------
@@ -113,27 +69,6 @@ Client code just calls the renderer without knowing the sub classes.
 
 Comparable interface is strategy pattern.
 
-Assignment 04:
--------------
-int CompareTo(<T> other)
-Pass the compare to your collection.
-
-int compare(<T> first, <T> second)
-
-Comparator
-public class IntegerComparator implemets Comparator<Integer> {
-
-Implement your own compare method.
-compare(...) {
-}
-
-
-======================================================================================================================================================================
-04/18/12:
-========
-
-File I/O
-Streams.
 
 Types:
     Binary
@@ -196,15 +131,6 @@ for(ConsultantTime cut : hours)
                     }
 }
 
-=====================================================================================================================================================
-04/11/12:
-========
-jar tvf build\jar\Example.jar
-
-Using mocks:
------------
-Depend on class that is not depend on yourself. (Outside code)
-
 Mock frameworks: easyMock, jMock. Mockito
 Mock objects out of interfaces and classes in Mockito and not in easyMock.
 
@@ -232,27 +158,5 @@ formmat()
 parse()
 
 String.format
-
-=====================================================================================================================================================
-04/04/12:
-========
-Teacher: Ryan Stephens
-eMail: d.ryan.stephens@gmail.com
-
-Ant:
-Clean, Compile
-
-Mockio, JMock
-
-Test Cases
-    Null array - null
-    Empty array. - 0
-    too small array - 1
-    Integer. MAX_INT (Greater than max Int can hold)
-    happy case
-    positive in array
-    negative in array
-    huge array
-    {Integer.MAX_VALUE,Integer.MAX_VALUE-1,Integer.MAX_VALUE-2}, 25
 
 =====================================================================================================================================================

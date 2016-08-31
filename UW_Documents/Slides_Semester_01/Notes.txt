@@ -1,16 +1,3 @@
-03/28/2012
-==========
-
--- Green light and Red light
-public static void main(String[] args) {
-    org.junit.runner.JunitCore.main("edu.washintgon.ext.JouralTest);
-    }
-
-All created in JavaScript:
-dev.sencha.com/deploy/ext-4.0.7-gpl/examples
-Sencha - Extenjion JS
-Sencha Mobile
-
 Boxing:
 All primitive types are boxed when it goes to list
 When it comes out it has to be out.
@@ -27,30 +14,10 @@ Example: super(k == 0 ? -1 : j + k);
 or super(j + k);
 
 ================================================================================================================================================
-03/21/2012
-==========
-
-Inner Classes:
-+++++++++++++
-Define class inside a class.
-
-Patterns:
-++++++++
-Singleton: Only a single instance of a class exists. Private constructor. Instantiate via a static getInstance method.
-(Only one instance of object created)
-
-Eclipse plug-in: http://www.patternbox.com/
-
-Aspected Oriented Programming:
-+++++++++++++++++++++++++++++
-
-
-
+Aspect Oriented Programming:
 Springs:
-+++++++
 
 Loiane Groner Blog Site: -- Read blogs
-
 
 JUnit Annotations:
 @Test
@@ -77,34 +44,7 @@ Running suite:
 
 final - initialized once and not changed.
 
-Inputs to final project:
------------------------
-Library numer - start of with one and go
-Duplicate patron - check the list (for loop) and find duplicate
-AddPatron - You are going to get library no
-Remove items
-Remove patron - based on library no
-Checks the no, if it is alreasy checked out.
-
-Junit4 - Only against Library class
-
-Only one item in the library, use == or equals method (use object reference and see whether it is same)
-No multiple versions of same book.
-
-A patron can check out only one item at a time
-
-ENUM - No getter methods mandatory.
-
-Removing patron: They can pass patron or library no. Check both and loop thru that and check that exists.
-
--- Check for null when adding (LibraryItem item)
-
-
-
 ================================================================================================================================================
-03/14/2012:
-==========
-
 Exception handling:
 try, catch, finally, throw, throws
 
@@ -118,16 +58,11 @@ InvoiceItem: Immutable (Read only) TotalValue, TotalDiscounts
 Invoice: Collection of invoice items.
 No need to define IllegalArgument - It is runtime and check this.
 
-Create your owen DiscountException:
+Create your own DiscountException:
 Validate that three exceptions
 
 @Test: look at up to handle exceptions.
 ================================================================================================================================================
-
-03/07/2012:
-==========
-
-Assignment 5 Review:
 UML - Underline is static
 
 Declare variables in UPPER CASE as they are static
@@ -145,21 +80,7 @@ Abstract Class supports polymorphism.
 Use final if you don't want your class to be extended.
 
 
-Assignment 6 Inputs:
--------------------
-Repackage it.
-Cast it, - CommissionedEmployee interface
-Manager: Change method name from bonus to something commission
-Restrict Access:
-private as much as possible, either protected or package level
---
-Two packages:
-New packages only two interfaces and one abstract class and keep everything else in existing package.
-
 ================================================================================================================================================
-02/29/2012:
-==========
-
 Read more on Reflection, Inheritance & Polymorphism
 Read more on StringBuffer class
 Class Inheritance - Homogeneous
@@ -184,8 +105,6 @@ Generics limit polymorphic effect
 
 To prevent polymorphism: make it final
 
-Assignment Review:
-=================
 ASCII Table
 -- Can be represented in Decimal, Hexadecimal, Octal
 Unicode:

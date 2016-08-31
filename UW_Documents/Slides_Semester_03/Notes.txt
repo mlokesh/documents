@@ -1,16 +1,10 @@
-08/22/12:
-========
 jnlp
 key store
 
----
 jConsole
 jVisualVM
 
 ======================================================================================================================================================================
-08/15/12:
-========
-
 RemoteBrokerSession extends Remote
 RemoteBrokerGateway extends Remote
     RemoteBrokerSession createAccount/login
@@ -25,8 +19,6 @@ RmiBrokerServer
 -- From Broker Test
 
 ======================================================================================================================================================================
-08/08/12:
-========
 DatagramSocket eventSocket;
 DatagramPocket datagramPocket;
 int multicastPort;
@@ -46,9 +38,6 @@ MulticastSocket
 EventListenerList listenerList = new EventListenerList();
 
 ======================================================================================================================================================================
-07/25/12:
-========
-
 while (true) {
     while ((x = queue.dequeue()) == null) {
         condition.await();
@@ -70,8 +59,6 @@ OrderProcessor - something to protect.
 wait/notify/synchronized
 
 ======================================================================================================================================================================
-07/11/12:
-========
 E - Elements of a collection
 K and V - Map
 T, U and V - General types
@@ -83,7 +70,7 @@ SimpleOrderQueue<E extends Order>
 Constructor - Uses the generics...
 
 DispatchFilter
-(threshhold (integer), )
+(thresh hold (integer), )
 
 MarketDispatchFolter (boolean, )
 
@@ -92,8 +79,6 @@ Check - Open or closed (returns only this)
 Broker implements ExchangeListener:
 When you create - Add exchange listener.
 
-Assignment 04: Inputs:
-=====================
 Order Queue.
 -- Only for orders
 Priority - Price or Quantity
@@ -175,9 +160,6 @@ Use TreeSet instead of priorityQueue.
 
 OrderQueue and OrderManager - Get it working.
 ======================================================================================================================================================================
-06/25/12:
-========
-
 Input Stream - Reading
 Output Stream - Writing
 
@@ -190,15 +172,8 @@ Slide #40.
 Use methods in slide #42 to write account.
 
 SHORT | ...... array
-readfully
+read fully
 ======================================================================================================================================================================
-06/20/12:
-========
-
-Review comments for assigment 01:
-================================
-Add equals and hashcode - CreditCard
-    
 Types of equals:
 Value based quality/Instance based quality. This is important when using HaspMap.
 
@@ -214,11 +189,6 @@ Copy the array passed into your method or constructor so that any edits made to 
     final byte[] copy = new byte[passwordHash.length]
     System.arraaycopy(passwordHash, 0, copy, 0, passwordHash.length);
 
-Assignment 02 inputs:
-====================
-Implement AccountManager interface
-Implement AccountManager Factory
-Use JNDI to connect database
 
 Database access through database.
     Using JNDI and data source.
@@ -253,12 +223,6 @@ DAO:
     Methods to define are methods required for client to work 
     
 ======================================================================================================================================================================
-06/13/12:
-========
-Instructor: Russ
-Website: http://faculty.washington.edu/rmoul/java/advancedFeatures
-student/jetson
-
 Java Beans: getters and setters - property x.
 Event listeners. Event changes...
 java.util.Concurrent/Multicast

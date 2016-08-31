@@ -40,7 +40,6 @@ long        -       64              -
 float       -       32
 double      -       64
 
-
 MVN:
 Life cycles:
 default, clean and site
