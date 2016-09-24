@@ -1,0 +1,20 @@
+Stack memory:
+-Xss
+Size can't be changed after the process starts
+each method has its own stack
+it's stack exists only during the life time of that method
+used to store local variables and function call
+stack is much faster to allocate in comparision to variables on the heap
+each thread in java has their own stack
+no memory left in the stack: java.lang.StackOverFlowError
+
+
+Heap memory:
+-Xms
+-Xmx
+heap memory is used to store objects (member variables, local variable or class variable)
+variables on heap must be destroyed by garbage collector
+throws java.lang.OutOfMemoryError when it runs out of memory
+
+Heap is the portion of the memory where dynamically allocated portion resides. (malloc)
+

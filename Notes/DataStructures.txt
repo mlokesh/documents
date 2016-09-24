@@ -49,12 +49,6 @@ Big O notation - Measure of algorithm efficiency.
 Elements/Operations
 
 ========================================================================================================================
-Heap memory:
-Heap is the portion of the memory where dynamically allocated portion resides. (malloc)
-
-Stack memory:
-Where local variables live.
-
 Queue:
 Adding: add, offer
 Remove: remove, poll
